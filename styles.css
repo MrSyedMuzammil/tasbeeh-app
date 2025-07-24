@@ -71,3 +71,21 @@ body {
   color: #fdbb2d;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.buttons button {
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
