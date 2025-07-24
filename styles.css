@@ -89,3 +89,12 @@ body {
   color: white;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+.increment {
+  background: linear-gradient(45deg, #fdbb2d, #b21f1f);
+}
+
+.reset {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
