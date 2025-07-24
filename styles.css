@@ -45,3 +45,10 @@ body {
   text-align: center;
   color: white;
 }
+/* Styling for the main heading */
+.title-heading h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
