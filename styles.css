@@ -98,6 +98,10 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+.save {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
 
 .buttons button:hover {
   transform: translateY(-3px);
