@@ -115,3 +115,18 @@ body {
 .reset:hover {
   background: rgba(255, 255, 255, 0.3);
 }
+#saved-counts {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #fdbb2d;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.highlighted-text {
+  font-weight: 800;
+  color: #fd2d2d;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
