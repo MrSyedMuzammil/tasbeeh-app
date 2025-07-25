@@ -130,3 +130,24 @@ body {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  .title-heading h1 {
+    font-size: 2rem;
+  }
+  .the-count p {
+    font-size: 3rem;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 800;
+  }
+  .buttons button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

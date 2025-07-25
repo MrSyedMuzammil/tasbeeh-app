@@ -17,12 +17,13 @@ function resetCount() {
 
 function save() {
   if (count > 0) {
-    let countStr = " " + count + " - ";
-    savedCounts.textContent += countStr;
+    const label = "Previous Prayers :";
 
-    totalPrayers += count;
-    savedTotal.textContent = "Total Prayers : " + totalPrayers;
-    resetCount();
+    const currentPrayers = savedCounts.textContent.replace(label, "");
+
+    const newPrayerList = label + " " + count + " -" + currentPrayers;
+
+    savedCounts.textContent = newPrayerList;
   }
 }
 
