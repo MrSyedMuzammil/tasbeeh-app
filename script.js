@@ -17,6 +17,8 @@ function resetCount() {
 
 function save() {
   if (count > 0) {
+    let countStr = " " + count + " - ";
+
     const label = "Previous Prayers :";
 
     const currentPrayers = savedCounts.textContent.replace(label, "");
@@ -24,6 +26,11 @@ function save() {
     const newPrayerList = label + " " + count + " -" + currentPrayers;
 
     savedCounts.textContent = newPrayerList;
+
+    totalPrayers += count;
+    savedTotal.textContent = "Total Prayers : " + totalPrayers;
+
+    resetCount();
   }
 }
 
