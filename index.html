@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" onclick="increment()">
       <div class="title-heading">
         <h1>
           Tasbeeh <br />📿 <br />
@@ -18,9 +18,9 @@
         <p id="count">0</p>
       </div>
       <div class="buttons">
-        <button class="increment" onclick="increment()">Increment</button>
-        <button class="save" onclick="save()">Save</button>
-        <button class="reset" onclick="reset()">Reset</button>
+        <button class="increment" onclick="increment(event)">Increment</button>
+        <button class="save" onclick="save(event)">Save</button>
+        <button class="reset" onclick="reset(event)">Reset</button>
       </div>
       <p id="saved-total-prayers" class="highlighted-text">Total Prayers :</p>
       <p id="saved-counts">Previous Prayers :</p>

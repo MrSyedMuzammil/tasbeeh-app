@@ -1,11 +1,15 @@
 let countNum = document.getElementById("count");
 let savedCounts = document.getElementById("saved-counts");
 let savedTotal = document.getElementById("saved-total-prayers");
+let container = document.querySelector(".container");
 
 let count = 0;
 let totalPrayers = 0;
 
-function increment() {
+function increment(event) {
+  if (event) {
+    event.stopPropagation();
+  }
   count += 1;
   countNum.innerHTML = count;
 }
@@ -15,7 +19,8 @@ function resetCount() {
   countNum.innerHTML = "0";
 }
 
-function save() {
+function save(event) {
+  event.stopPropagation();
   if (count > 0) {
     let countStr = " " + count + " - ";
 
@@ -34,7 +39,8 @@ function save() {
   }
 }
 
-function reset() {
+function reset(event) {
+  event.stopPropagation();
   count = 0;
   countNum.innerHTML = "0";
   savedCounts.textContent = "Previous Prayers : ";
